@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · igawdi</title>
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#0f172a;background:#f8fafc;line-height:1.7;margin:0}
+.top{background:#0f172a;padding:18px 20px}
+.top a{font-family:Georgia,serif;font-size:24px;font-weight:700;color:#fff;text-decoration:none}
+.top span{color:#38bdf8}
+main{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+h1{font-family:Georgia,serif;font-size:36px;margin:0 0 8px}
+h2{font-size:20px;margin:32px 0 8px}
+p,li{color:#334155}
+a{color:#0d9488}
+</style>
+</head>
+<body>
+<div class="top"><a href="/">igawdi<span>.</span></a></div>
+<main>
+<h1>Privacy policy</h1>
+<p>Last updated: October 2026</p>
+
+<h2>Who we are</h2>
+<p>igawdi is a service provided by [Aleksa Jovic], self-employed, [Qawra], Malta. Contact: [aleksa1945jovic@gmail.com], +356 7734 8224. See also our <a href="legal.html">legal notice</a>.</p>
+
+<h2>What this policy covers</h2>
+<p>This policy explains how personal data is handled on this website (igawdi.com) and in the igawdi guest app (app.igawdi.com) that hotels provide to their guests and staff.</p>
+
+<h2>This website</h2>
+<p>This website does not use cookies, analytics or tracking, and it has no forms. It is hosted on GitHub Pages, which may record technical data such as IP addresses for security purposes. If you contact us by phone or WhatsApp, we use your details only to reply to you.</p>
+
+<h2>The igawdi guest app</h2>
+<p>When a hotel uses igawdi, the hotel decides how guest data is used and is the data controller. igawdi processes this data on the hotel's behalf. The app may process:</p>
+<ul>
+<li>room number, stay code and dates of the stay</li>
+<li>requests, orders, table bookings and feedback that a guest sends</li>
+<li>email addresses of hotel staff who log in</li>
+</ul>
+<p>The app uses only strictly necessary cookies to keep guests and staff logged in. We do not use advertising or tracking cookies, and we do not sell personal data.</p>
+
+<h2>Where data is stored</h2>
+<p>The app is hosted on Microsoft Azure in a data centre in the European Union.</p>
+
+<h2>How long we keep data</h2>
+<p>Data is kept only as long as needed to provide the service to the hotel. A guest's access ends at check-out. Data is deleted at the hotel's request or when the hotel stops using igawdi.</p>
+
+<h2>Your rights</h2>
+<p>Under the GDPR you have the right to access, correct or delete your personal data, to restrict or object to its processing, and to data portability. Guests can contact their hotel or us. You also have the right to lodge a complaint with the Information and Data Protection Commissioner in Malta (idpc.org.mt).</p>
+
+<h2>Changes</h2>
+<p>We may update this policy. The latest version is always available on this page.</p>
+
+<p style="margin-top:40px"><a href="/">← Back to igawdi.com</a></p>
+</main>
+</body>
+</html>

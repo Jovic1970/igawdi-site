@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal notice · igawdi</title>
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#0f172a;background:#f8fafc;line-height:1.7;margin:0}
+.top{background:#0f172a;padding:18px 20px}
+.top a{font-family:Georgia,serif;font-size:24px;font-weight:700;color:#fff;text-decoration:none}
+.top span{color:#38bdf8}
+main{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+h1{font-family:Georgia,serif;font-size:36px;margin:0 0 8px}
+h2{font-size:20px;margin:32px 0 8px}
+p{color:#334155}
+a{color:#0d9488}
+</style>
+</head>
+<body>
+<div class="top"><a href="/">igawdi<span>.</span></a></div>
+<main>
+<h1>Legal notice</h1>
+<p>Information about the provider of this website and of the igawdi service.</p>
+
+<h2>Service provider</h2>
+<p>[FULL NAME]<br>Self-employed, trading as igawdi<br>[ADDRESS], Malta</p>
+
+<h2>Contact</h2>
+<p>Phone: +356 7734 8224<br>Email: [EMAIL]</p>
+
+<h2>VAT</h2>
+<p>VAT number: [VAT NUMBER]</p>
+
+<h2>Liability for content</h2>
+<p>We take care to keep the information on this website accurate and up to date, but we cannot guarantee that it is complete or error-free at all times.</p>
+
+<h2>Links to other websites</h2>
+<p>This website may link to external websites. We are not responsible for their content.</p>
+
+<p style="margin-top:40px"><a href="/">← Back to igawdi.com</a></p>
+</main>
+</body>
+</html>
