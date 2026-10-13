@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>igawdi · The digital concierge for Malta's hotels</title>
+<meta name="description" content="Guests request services, order room service and get answers 24/7 from their phone. Your staff get every request instantly.">
+<style>
+:root{--ink:#0f172a;--muted:#64748b;--sky:#38bdf8;--teal:#0d9488;--bg:#f8fafc}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.serif{font-family:Georgia,"Times New Roman",serif}
+header{position:sticky;top:0;z-index:10;background:rgba(15,23,42,.94);backdrop-filter:blur(8px);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:Georgia,serif;font-size:26px;font-weight:700}
+.logo span{color:var(--sky)}
+.links{display:flex;gap:24px;font-size:15px;opacity:.9}
+.btn{display:inline-block;border-radius:999px;padding:12px 22px;font-weight:600;font-size:15px}
+.btn-sky{background:var(--sky);color:var(--ink)}
+.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-green{background:#16a34a;color:#fff}
+.hero{background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 60%,#0f766e 100%);color:#fff;padding:72px 0 88px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:52px;line-height:1.1;margin-bottom:18px}
+.hero p{font-size:19px;opacity:.85;margin-bottom:28px;max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.note{margin-top:16px;font-size:14px;opacity:.7}
+.phone{width:280px;margin:0 auto;border-radius:40px;background:#0b1222;padding:12px;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.screen{border-radius:30px;padding:20px 14px;min-height:520px;color:#fff;background:linear-gradient(to bottom,rgba(15,23,42,.3),rgba(15,23,42,.9)),linear-gradient(135deg,#0ea5e9,#0f766e)}
+.pill{display:inline-block;font-size:11px;background:rgba(255,255,255,.2);border-radius:999px;padding:3px 10px}
+.screen h3{font-size:24px;margin:60px 0 2px}
+.screen small{opacity:.75;font-size:12px}
+.card{border-radius:16px;padding:12px 14px;margin-top:10px;font-size:12px}
+.card b{display:block;font-size:14px}
+.c-white{background:#fff;color:var(--ink)}
+.c-sky{background:var(--sky);color:var(--ink)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.c-glass{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);margin-top:0}
+section{padding:80px 0}
+.eyebrow{color:var(--teal);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+h2{font-size:38px;line-height:1.2;margin:8px 0 14px}
+.lead{color:var(--muted);font-size:18px;max-width:640px}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.box{background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:26px}
+.box .icon{font-size:30px}
+.box h4{font-size:19px;margin:10px 0 6px}
+.box p{color:var(--muted)}
+.dark{background:var(--ink);color:#fff}
+.dark .lead,.dark .box p{color:#cbd5e1}
+.dark .box{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)}
+.num{display:inline-flex;width:40px;height:40px;border-radius:50%;background:var(--sky);color:var(--ink);font-weight:700;align-items:center;justify-content:center}
+.story{text-align:center}
+.story blockquote{font-size:30px;max-width:760px;margin:16px auto 0;line-height:1.35}
+.price{max-width:520px;margin:40px auto 0;text-align:center;background:#fff;border:1px solid #e2e8f0;border-radius:24px;padding:36px;box-shadow:0 20px 40px rgba(15,23,42,.08)}
+.amount{font-size:56px;font-weight:800}
+.amount small{font-size:18px;font-weight:500;color:var(--muted)}
+.price ul{list-style:none;text-align:left;margin:24px 0;display:grid;gap:10px}
+.price li::before{content:"✓  ";color:var(--teal);font-weight:700}
+.center{text-align:center}
+.center .lead{margin:0 auto}
+.center .cta{justify-content:center;margin-top:28px}
+footer{background:#020617;color:#94a3b8;font-size:14px;padding:28px 0}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.foot a{margin-left:18px}
+.foot a:hover{color:#fff}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero h1{font-size:38px}.cols3{grid-template-columns:1fr}.links{display:none}h2{font-size:30px}.story blockquote{font-size:24px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo">igawdi<span>.</span></a>
+    <nav class="links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-sky">Try free</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1 class="serif">The digital concierge for Malta's hotels</h1>
+      <p>Guests request services, order room service and get answers 24/7, right from their phone. Your staff get every request instantly, in one place. No app download needed.</p>
+      <div class="cta">
+        <a href="#contact" class="btn btn-sky">Try free for 7 days</a>
+        <a href="#how" class="btn btn-ghost">See how it works</a>
+      </div>
+      <p class="note">Built in Malta, for Maltese hotels.</p>
+    </div>
+    <div class="phone">
+      <div class="screen">
+        <span class="pill">Room 305</span>
+        <h3 class="serif">Welcome to your hotel</h3>
+        <small>Valletta, Malta</small>
+        <div class="card c-white"><b>🛎️ Request a service</b>Towels, cleaning, parking</div>
+        <div class="card c-sky"><b>✨ AI Assistant</b>Here for you 24/7</div>
+        <div class="grid2">
+          <div class="card c-glass"><b>🍽️ Restaurants</b>Book a table</div>
+          <div class="card c-glass"><b>🥂 Order food</b>Room service</div>
+          <div class="card c-glass"><b>🗺️ Explore</b>Sights, beaches</div>
+          <div class="card c-glass"><b>ℹ️ Hotel info</b>Wi-Fi, check-out</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Why hotels choose igawdi</p>
+    <h2 class="serif">Your team works smarter, your guests feel looked after</h2>
+    <p class="lead">Every guest request reaches the right department in seconds, so tasks are done faster and smoother.</p>
+    <div class="cols3">
+      <div class="box"><div class="icon">📞</div><h4>Fewer calls to reception</h4><p>Guests send requests and find answers themselves, so your front desk can focus on people in front of them.</p></div>
+      <div class="box"><div class="icon">⚡</div><h4>Faster, smoother service</h4><p>Housekeeping, maintenance and the kitchen see each request instantly, with the room number and status.</p></div>
+      <div class="box"><div class="icon">💶</div><h4>More revenue</h4><p>Room service orders and table bookings are only a tap away, any time of the day.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="features">
+  <div class="wrap">
+    <p class="eyebrow">Features</p>
+    <h2 class="serif">Everything your guests need, in one place</h2>
+    <div class="cols3">
+      <div class="box"><div class="icon">🛎️</div><h4>Service requests</h4><p>Towels, cleaning, maintenance, parking. Sent straight to the right team.</p></div>
+      <div class="box"><div class="icon">✨</div><h4>AI assistant</h4><p>Answers questions about breakfast, the pool, Wi-Fi and more, 24 hours a day.</p></div>
+      <div class="box"><div class="icon">🥂</div><h4>Room service</h4><p>Your menu with prices, a simple cart, and orders added to the room bill.</p></div>
+      <div class="box"><div class="icon">🍽️</div><h4>Table booking</h4><p>Guests book your restaurants and bars in a few taps.</p></div>
+      <div class="box"><div class="icon">⭐</div><h4>Guest feedback</h4><p>Happy guests are invited to review you online. Unhappy ones reach you first.</p></div>
+      <div class="box"><div class="icon">📋</div><h4>Staff panel</h4><p>All requests on one screen. Accept, mark done, filter by department.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2 class="serif">Simple for guests, simple for staff</h2>
+    <div class="cols3">
+      <div class="box"><span class="num">1</span><h4>Guest scans the QR code</h4><p>In the room, with a personal stay code from reception. Nothing to install.</p></div>
+      <div class="box"><span class="num">2</span><h4>Sends a request</h4><p>Extra towels, a late check-out or dinner for two. In any situation, in seconds.</p></div>
+      <div class="box"><span class="num">3</span><h4>Your team gets it instantly</h4><p>The request appears on the staff panel, ready to accept and complete.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark story">
+  <div class="wrap">
+    <p class="eyebrow">Our name</p>
+    <blockquote class="serif">"Gawdi" means "enjoy" in Maltese. That is our promise to every guest who stays with you.</blockquote>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap center">
+    <p class="eyebrow">Pricing</p>
+    <h2 class="serif">Simple and fair</h2>
+    <p class="lead">One price per room. No long contracts.</p>
+    <div class="price">
+      <div class="amount">€2.50<small> per room / month</small></div>
+      <ul>
+        <li>All features included</li>
+        <li>Your hotel's name, photos, menus and information</li>
+        <li>Unlimited staff and guests</li>
+        <li>Free 7-day trial</li>
+        <li>One-time setup fee: contact us</li>
+      </ul>
+      <a href="#contact" class="btn btn-dark">Start your free trial</a>
+    </div>
+  </div>
+</section>
+
+<section class="dark center" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2 class="serif">Let's show you in 10 minutes</h2>
+    <p class="lead">Call or message us for a free demo or to start your 7-day trial.</p>
+    <div class="cta">
+      <a href="tel:+35677348224" class="btn btn-sky">📞 +356 7734 8224</a>
+      <a href="https://wa.me/35677348224" class="btn btn-green">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 igawdi · Malta</span>
+    <span><a href="#">Legal notice</a><a href="#">Privacy policy</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
